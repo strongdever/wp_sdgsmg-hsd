@@ -1,0 +1,56 @@
+  @charset "UTF-8";
+
+  /*
+  Theme Name: 健康投資推進協議会
+  Author: Lazy
+  Author URI: https://wordpress.org/
+  Description: これからの長寿社会に向けて企業における健康投資を推進する。
+  Requires at least: 4.9.6
+  Requires PHP: 5.2.4
+  Version: 1.0
+  Text Domain: https://sdgs-mg.org/hsd/
+  */
+
+
+  /*--------------------------------------------------------------
+  >>> TABLE OF CONTENTS:
+  ----------------------------------------------------------------
+
+  /*
+  * Chrome renders extra-wide &nbsp; characters for the Hoefler Text font.
+  * This results in a jumping cursor when typing in both the Classic and block
+  * editors. The following font-face override fixes the issue by manually inserting
+  * a custom font that includes just a Hoefler Text space replacement for that
+  * character instead.
+  */
+
+  #wpadminbar {
+    display: none;
+  }
+
+  body#bodyabout .nav-menu>li:first-child .menu-link span {
+    color: #1A8C33;
+  }
+
+  body#bodyissues .nav-menu>li:nth-child(2) .menu-link span {
+    color: #1A8C33;
+  }
+
+  body#bodyactivities .nav-menu>li:nth-child(3) .menu-link span {
+    color: #1A8C33;
+  }
+
+  body#bodyreport .nav-menu>li:nth-child(4) .menu-link span {
+    color: #1A8C33;
+  }
+
+  body#bodymembers .nav-menu>li:nth-child(5) .menu-link span {
+    color: #1A8C33;
+  }
+
+  body#bodyapply .nav-menu>li:nth-child(6) .menu-link span {
+    color: #1A8C33;
+  }
+  body#bodyinquiry .nav-menu>li:nth-child(7) .menu-link span {
+    color: #1A8C33;
+  }

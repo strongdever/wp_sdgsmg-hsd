@@ -1,0 +1,259 @@
+ul.simple-pagination {
+  list-style: none
+}
+
+.simple-pagination {
+  display: block;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  overflow: hidden;
+  margin: 4.8rem auto 0 auto;
+}
+
+.simple-pagination ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.simple-pagination li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  float: left
+}
+
+.compact-theme a,
+.compact-theme span {
+  float: left;
+  color: #333;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+  text-align: center;
+  border: 1px solid #aaa;
+  border-right: none;
+  min-width: 14px;
+  padding: 0 7px;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, .2);
+  background: #efefef;
+  background: -moz-linear-gradient(top, #fff 0, #efefef 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff), color-stop(100%, #efefef));
+  background: -webkit-linear-gradient(top, #fff 0, #efefef 100%);
+  background: -o-linear-gradient(top, #fff 0, #efefef 100%);
+  background: -ms-linear-gradient(top, #fff 0, #efefef 100%);
+  background: linear-gradient(top, #fff 0, #efefef 100%)
+}
+
+.compact-theme a:hover {
+  text-decoration: none;
+  background: #efefef;
+  background: -moz-linear-gradient(top, #efefef 0, #bbb 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #efefef), color-stop(100%, #bbb));
+  background: -webkit-linear-gradient(top, #efefef 0, #bbb 100%);
+  background: -o-linear-gradient(top, #efefef 0, #bbb 100%);
+  background: -ms-linear-gradient(top, #efefef 0, #bbb 100%);
+  background: linear-gradient(top, #efefef 0, #bbb 100%)
+}
+
+.compact-theme .prev {
+  border-radius: 3px 0 0 3px
+}
+
+.compact-theme .next {
+  border-right: 1px solid #aaa;
+  border-radius: 0 3px 3px 0
+}
+
+.compact-theme .current {
+  background: #bbb;
+  background: -moz-linear-gradient(top, #bbb 0, #efefef 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #bbb), color-stop(100%, #efefef));
+  background: -webkit-linear-gradient(top, #bbb 0, #efefef 100%);
+  background: -o-linear-gradient(top, #bbb 0, #efefef 100%);
+  background: -ms-linear-gradient(top, #bbb 0, #efefef 100%);
+  background: linear-gradient(top, #bbb 0, #efefef 100%);
+  cursor: default
+}
+
+.compact-theme .ellipse {
+  background: #eaeaea;
+  padding: 0 10px;
+  cursor: default
+}
+
+.light-theme a,
+.light-theme span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background: #EFEFEF;
+  color: #333;
+  font-family: 'Avenir';
+  font-size: 1.6rem;
+  width: 4.0rem;
+  height: 4.0rem;
+  text-decoration: none;
+  border-radius: 90px;
+  margin: 0 1.2rem;
+  transition: 0.3s;
+}
+
+.light-theme a:hover {
+  text-decoration: none;
+  background-color: #bbb;
+  color: #26386B;
+}
+
+.light-theme a:active {
+  text-decoration: none;
+  background-color: #1A8C33;
+  color: white;
+}
+
+.light-theme .current:not(.prev, .next) {
+  background: #1A8C33;
+  color: #fff;
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 1), 0 0 2px rgba(0, 0, 0, .3) inset;
+  cursor: default
+}
+
+.light-theme .ellipse {
+  background: 0 0;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  font-weight: 700;
+  cursor: default
+}
+
+.dark-theme a,
+.dark-theme span {
+  float: left;
+  color: #ccc;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+  text-align: center;
+  border: 1px solid #222;
+  min-width: 14px;
+  padding: 0 7px;
+  margin: 0 5px 0 0;
+  border-radius: 3px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, .2);
+  background: #555;
+  background: -moz-linear-gradient(top, #555 0, #333 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #555), color-stop(100%, #333));
+  background: -webkit-linear-gradient(top, #555 0, #333 100%);
+  background: -o-linear-gradient(top, #555 0, #333 100%);
+  background: -ms-linear-gradient(top, #555 0, #333 100%);
+  background: linear-gradient(top, #555 0, #333 100%)
+}
+
+.dark-theme a:hover {
+  text-decoration: none;
+  background: #444
+}
+
+.dark-theme .current {
+  background: #222;
+  color: #fff;
+  border-color: #000;
+  box-shadow: 0 1px 0 rgba(255, 255, 255, .2), 0 0 1px 1px rgba(0, 0, 0, .1) inset;
+  cursor: default
+}
+
+.dark-theme .ellipse {
+  background: 0 0;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  font-weight: 700;
+  cursor: default
+}
+
+/*# sourceMappingURL=simplePagination.min.css.map */
+
+.prev {
+  width: 2.4rem !important;
+  height: 2.4rem !important;
+  padding: 0;
+  margin-right: 0.4rem !important;
+  background: unset !important;
+  background-image: url(../img/prev-arrow.svg) !important;
+  background-size: contain !important;
+  background-repeat: no-repeat !important;
+}
+
+.prev.current {
+  display: none;
+}
+
+.next.current {
+  display: none;
+}
+
+/* 
+span.prev{
+  width: 50px;
+  height: 50px;
+  padding: 0;
+  margin-right: 10px;
+  border-radius: 50px;
+  background: unset;
+  background-image: url(../img/prev-arrow.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+} */
+
+.next {
+  width: 2.4rem !important;
+  height: 2.4rem !important;
+  padding: 0;
+  margin-left: 0.4rem !important;
+  background: unset !important;
+  background-image: url(../img/next-arrow.svg) !important;
+  background-size: contain !important;
+  background-repeat: no-repeat !important;
+}
+
+.prev:hover,
+.next:hover {
+  opacity: ;
+}
+
+/* 
+span.next { 
+  width: 50px;
+  height: 50px;
+  padding: 0;
+  margin-left: 10px;
+  background: unset;
+  background-image: url(../img/next-arrow.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+} */
+
+.light-theme .prev:active {
+  background-color: #26386B;
+  background-image: url(../img/prev_white.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.light-theme .next:active {
+  background-color: #26386B;
+  background-image: url(../img/next_white.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
